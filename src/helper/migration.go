@@ -9,5 +9,10 @@ func Migrate() {
 	config.DB.AutoMigrate(
 		&models.User{},
 		&models.Role{},
+		&models.Recruiter{},
+		&models.Skill{},
+		&models.Worker{},
+		&models.Project{},
+		&models.Experience{},
 	)
 }
